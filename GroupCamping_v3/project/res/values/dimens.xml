@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- animation -->
+    <item name="animation_activity_time" type="integer">200</item>
+
+    <dimen name="text_size_normal">16sp</dimen>
+    <dimen name="progress_dialog_size">80dp</dimen>
+    <dimen name="progress_bar_size">40dp</dimen>
+
+    <!-- main screen -->
+    <dimen name="main_button_padding">20dp</dimen>
+
+</resources>

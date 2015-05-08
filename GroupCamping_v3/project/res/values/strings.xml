@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Group Camping</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- comon -->
+    <string name="home">"Home"</string>
+    <string name="save">"Save"</string>
+    <string name="ok">"OK"</string>
+    <string name="cancel">"Cancel"</string>
+
+    <!-- main screen -->
+    <string name="title_activity_camping">Group management</string>
+    <string name="title_activity_new_group">New group</string>
+    <string name="title_activity_group_detail">Group Detail</string>
+    <string name="title_activity_item_parent">ItemParentActivity</string>
+    <string name="title_activity_item_chirld">ItemChirldActivity</string>
+    <string name="title_activity_share_group">Share Group</string>
+
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.groupcamping"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- <activity -->
+        <!-- android:name=".gui.DBRoulette" -->
+        <!-- android:configChanges="orientation|keyboard" -->
+        <!-- android:label="@string/app_name" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!--  -->
+        <activity
+            android:name=".gui.SplashActivity"
+            android:configChanges="keyboard|locale|keyboardHidden|orientation|screenSize|fontScale"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--  -->
+        <activity
+            android:name=".gui.MainActivity"
+            android:configChanges="keyboard|locale|keyboardHidden|orientation|screenSize|fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!--  -->
+        <activity
+            android:name=".gui.ListGroupActivity"
+            android:configChanges="keyboard|locale|keyboardHidden|orientation|screenSize|fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!--  -->
+        <activity
+            android:name=".gui.RegisterActivity"
+            android:configChanges="keyboard|locale|keyboardHidden|orientation|screenSize|fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!--  -->
+        <activity
+            android:name="com.dropbox.client2.android.AuthActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask" >
+            <intent-filter>
+
+                <!-- Change this to be db- followed by your app key -->
+                <data android:scheme="@string/dropbox_app_key_manifest" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--  -->
+        <activity
+            android:name=".gui.GroupActivity"
+            android:configChanges="keyboard|locale|keyboardHidden|orientation|screenSize|fontScale"
+            android:label="@string/title_activity_camping"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".gui.NewGroupActivity"
+            android:configChanges="keyboard|locale|keyboardHidden|orientation|screenSize|fontScale"
+            android:label="@string/title_activity_new_group"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".gui.GroupDetailActivity"
+            android:configChanges="keyboard|locale|keyboardHidden|orientation|screenSize|fontScale"
+            android:label="@string/title_activity_item_parent"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".gui.ItemChirldActivity"
+            android:configChanges="keyboard|locale|keyboardHidden|orientation|screenSize|fontScale"
+            android:label="@string/title_activity_item_chirld"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!--  -->
+        <receiver android:name=".background.IncomingSms" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.example.groupcamping.gui.ShareGroupActivity"
+            android:configChanges="keyboard|locale|keyboardHidden|orientation|screenSize|fontScale"
+            android:label="@string/title_activity_share_group"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

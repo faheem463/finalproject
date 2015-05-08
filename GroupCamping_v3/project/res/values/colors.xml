@@ -1,0 +1,10 @@
+<resources>
+
+    <color name="main">#fb962c</color>
+    
+    <color name="validate_button">#007aff</color>
+    <color name="tableview_title_bg">#d2d2d2</color>
+    <color name="button_click">#66000000</color>
+    <color name="button_click_2">#66ffffff</color>
+
+</resources>

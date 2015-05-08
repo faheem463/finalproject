@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_item"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+    android:checked="true"
+    android:clickable="false"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="left|center_vertical"
+    android:padding="5dp"
+    android:text="la ala la"
+    android:textSize="18sp" />
